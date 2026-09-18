@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    
+    <title>My First website</title> <!--the title of the page-->
+
+    <!--My CSS section
+    
+    - used 'margin' to center elements
+    - used 'border-collapse' to remove space between table borders
+    - Added padding so the text is not too close to the borders
+    - th is the table header
+    - td is the table data
+    - tr is the table row so every <tr> tag represents a row in the table
+    - used 'display: block' for the image as it turns inline element into a block element 
+    - used 'max-width' since it makes the image responsive-
+    - margin-bottom: 10px; adds 10 pixels of space beneath the caption to prevent it from looking crowded against the top of the table.
+    - margin-top reduces top margin to pull the title up-->
+    
+    <style type="text/css"> 
+
+        body { 
+            background: pink;
+            background-image: url("https://wallpapercave.com/wp/wp12253570.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+    
+        h1 {
+            color: purple;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        img {
+            display: block;
+            width: 400px;
+            max-width: 100%;
+            margin: 10px auto;
+            border-radius: 50%;
+        }
+
+        table {
+            
+            margin: 15px auto;  
+            border-collapse: collapse; 
+            background-color: white;  
+        }
+        
+        th, td {
+            border: 2px solid purple;
+            padding: 12px 20px;
+        }
+
+        th {
+            background-color: purple;
+            color: rgb(244, 242, 242);
+        }
+
+        caption {
+            font-size: 25px;
+            font-weight: bold;
+            color: purple;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: purple;
+            font-weight: bold;
+            text-decoration: underline;
+            display: block;
+            text-align: center;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>This Page Is All About Cats </h1>
+
+    <img
+        src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131"
+        alt="cat"
+    >
+
+    <table> 
+        <caption>Types of Cats</caption>
+
+        <tr> 
+            <th>Name</th>
+            <th>Age</th>
+            <th>Breed</th>
+        </tr>
+
+        <tr>
+            <td>Loxie</td> 
+            <td>1</td>
+            <td>Maine Coon</td>
+        </tr>
+
+        <tr>
+            <td>Pippa</td>
+            <td>8</td>
+            <td>Persian Cat</td>
+        </tr>
+    </table>
+
+    <a href="https://www.factretriever.com/cat-facts">
+        Click here to see fun facts about cats
+    </a>
+
+</body>
+
